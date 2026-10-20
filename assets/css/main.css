@@ -313,6 +313,130 @@ h2.section-title {
     font-size: 12px
 }
 
+/* HERO TAGLINE */
+.hero-tagline {
+    color: #00aaff;
+    font-size: clamp(1rem, 2.4vw, 1.3rem);
+    letter-spacing: .08em;
+    margin-top: -1.25rem;
+    margin-bottom: .35rem
+}
+
+.hero-sub {
+    color: #aaa;
+    font-size: 13px;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+    margin-bottom: 2rem
+}
+
+/* EXPERIENCE */
+.timeline {
+    border-left: 1px solid #1f1f1f;
+    padding-left: 1.75rem
+}
+
+.exp-item {
+    position: relative;
+    margin-bottom: 2.25rem
+}
+
+.exp-item::before {
+    content: "";
+    position: absolute;
+    left: calc(-1.75rem - 5px);
+    top: .55rem;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: #ff3366
+}
+
+.exp-head {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: .25rem 1rem;
+    margin-bottom: .5rem
+}
+
+.exp-head h3 {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #e0e0e0
+}
+
+.exp-head h3 span {
+    color: #00aaff;
+    font-weight: 400
+}
+
+.exp-meta {
+    font-size: 12px;
+    color: #888;
+    letter-spacing: .05em
+}
+
+.exp-item ul {
+    list-style: none
+}
+
+.exp-item li {
+    position: relative;
+    padding-left: 1.25rem;
+    font-size: 14px;
+    color: #bbb;
+    margin-bottom: .4rem
+}
+
+.exp-item li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: #ff3366
+}
+
+/* SKILLS */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2.5rem
+}
+
+.skill-group {
+    background: #0f0f0f;
+    border: 1px solid #1a1a1a;
+    border-radius: 4px;
+    padding: 1.25rem
+}
+
+.skill-group h4 {
+    color: #00aaff;
+    font-size: 13px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    margin-bottom: .5rem
+}
+
+.skill-group h4 i {
+    color: #ff3366;
+    margin-right: .4rem
+}
+
+.skill-group p {
+    font-size: 13px;
+    color: #bbb;
+    line-height: 1.6
+}
+
+.sub-title {
+    color: #e0e0e0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 1rem
+}
+
 /* CONTACT */
 .contact-inner {
     max-width: 620px
@@ -413,5 +537,25 @@ footer {
 
     #hero h1 {
         font-size: 2.4rem
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: .5rem 1rem;
+        padding: .75rem 1rem
+    }
+
+    nav a {
+        font-size: 11px
+    }
+
+    section {
+        padding: 5rem 1rem
+    }
+
+    .social-links {
+        flex-wrap: wrap;
+        justify-content: center
     }
 }
